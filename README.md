@@ -2,6 +2,10 @@
 
 Vous trouverez ici le projet de l'UE Programmation Web 2
 
+Je me suis inspiré de ces ressources :
+
+* [Ekrem İmamoğlu](https://www.ekremimamoglu.com)
+
 ## Auteur
 
 **Efe ERKEN**
