@@ -1,0 +1,26 @@
+body > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body header img {
+    width: 6rem;
+}
+
+body header nav {
+
+}
+
+body header section {
+    justify-content: right;
+}
+
+body header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+body header nav ul li {
+    margin-right: 20px;
+}
