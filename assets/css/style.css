@@ -1,19 +1,19 @@
 body > header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 20px 5vw;
 }
 
 body header img {
     width: 6rem;
 }
 
-body header nav {
-
-}
-
-body header section {
-    justify-content: right;
+body header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 body header nav ul {
@@ -23,4 +23,37 @@ body header nav ul {
 
 body header nav ul li {
     margin-right: 20px;
+}
+
+main > header {
+    display: flex;
+    justify-content: center;
+}
+
+main > header img {
+    width: 80vw;
+    margin: 20px 0;
+}
+
+#articles {
+    margin: 0 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+#articles article {
+    margin: 36px 10px;
+    padding: 19px 17px 27px;
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+}
+
+#articles article header img {
+    width: 100%;
+}
+
+#articles article main p {
+    overflow-y: hidden;
+    height: 5em;
 }
