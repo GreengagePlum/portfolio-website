@@ -11,9 +11,16 @@ body header img {
 
 body header div {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    body header div {
+        flex-direction: row;
+    }
 }
 
 body header nav ul {
@@ -38,13 +45,20 @@ main>header img {
 #articles {
     margin: 0 5vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px) {
+    #articles {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 #articles article {
     display: grid;
-    grid-template-rows: 335px 1fr 30px;
+    grid-template-rows: 1fr calc(6em + 10px) 40px;
+    /* grid-template-rows: 335px 1fr 30px; */
     gap: 10px;
     position: relative;
     margin: 36px 10px;
@@ -54,7 +68,25 @@ main>header img {
 }
 
 #articles article header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
+    max-height: 275px;
+    max-width: 495px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#articles article header h1 {
+    position: relative;
+    display: block;
+    word-wrap: break-word;
+    overflow-y: hidden;
+    max-height: 2.4em;
+    /* (Number of lines you want visible) * (line-height) */
+    line-height: 1.2em;
+    margin: 8px;
 }
 
 #articles article main p {
@@ -65,6 +97,8 @@ main>header img {
     max-height: 6em;
     /* (Number of lines you want visible) * (line-height) */
     line-height: 1.2em;
+    margin: 5px;
+    /* text-overflow: ellipsis; */
 }
 
 #articles article footer {
@@ -94,4 +128,47 @@ main>header img {
 #articles article footer .social-media ul li {
     margin-right: 5px;
     font-size: 30px;
+}
+
+body>footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px) {
+    body>footer {
+        flex-direction: row;
+    }
+}
+
+/* body>footer #notices {
+    width: min-content;
+} */
+
+body>footer #notices img {
+    width: 6rem;
+}
+
+body>footer nav ul {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+body>footer nav ul li {
+    padding-bottom: 10px;
+}
+
+body>footer .social-media ul {
+    list-style: none;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+    body>footer .social-media ul {
+        justify-content: space-between;
+    }
 }
