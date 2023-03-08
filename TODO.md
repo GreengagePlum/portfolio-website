@@ -2,9 +2,8 @@
 
 ## Bugs & Fixes
 
-- [ ] Max 2 line article titles
 - [ ] Align article footer
-- [ ] Finnish page footer
+- [ ] Make burger menu for mobile
 
 ## Features
 
@@ -21,4 +20,6 @@
 
 ## Done
 
-- [ ]
+- [x] Finish page footer
+- [x] Max 2 line article titles
+- [x] Optimize for mobile first
