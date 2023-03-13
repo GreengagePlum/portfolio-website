@@ -1,35 +1,68 @@
-body>header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 5vw;
+@media screen and (min-width: 768px) {
+    body>header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 5vw;
+    }
 }
 
 body header img {
     width: 6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    body header img {
+        display: inline;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 body header div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
 }
 
 @media screen and (min-width: 768px) {
     body header div {
         flex-direction: row;
+        justify-content: space-between;
     }
 }
 
 body header nav ul {
     list-style-type: none;
+    padding: 0px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    body header nav ul {
+        flex-direction: row;
+        padding-left: 20px;
+    }
 }
 
 body header nav ul li {
-    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    body header nav ul li {
+        padding-bottom: 0px;
+    }
+
+    body header nav ul li:not(:last-child) {
+        margin-right: 20px;
+    }
 }
 
 main>header {
@@ -98,7 +131,6 @@ main>header img {
     /* (Number of lines you want visible) * (line-height) */
     line-height: 1.2em;
     margin: 5px;
-    /* text-overflow: ellipsis; */
 }
 
 #articles article footer {
@@ -112,22 +144,29 @@ main>header img {
 
 #articles article footer button {
     align-self: center;
-    height: 30px;
-    width: 30px;
+    height: auto;
+    width: auto;
     font-size: 30px;
     border: none;
     background: none;
+    padding: 0px;
 }
 
 #articles article footer .social-media ul {
     width: 100%;
     list-style-type: none;
     display: flex;
+    padding: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #articles article footer .social-media ul li {
-    margin-right: 5px;
     font-size: 30px;
+}
+
+#articles article footer .social-media ul li:not(:last-child) {
+    margin-right: 5px;
 }
 
 body>footer {
@@ -142,12 +181,29 @@ body>footer {
     }
 }
 
-/* body>footer #notices {
-    width: min-content;
-} */
-
 body>footer #notices img {
     width: 6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    body>footer #notices img {
+        display: inline;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+body>footer #notices>p {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    body>footer #notices>p {
+        text-align: start;
+    }
 }
 
 body>footer nav ul {
@@ -155,13 +211,14 @@ body>footer nav ul {
     padding-bottom: 5px;
 }
 
-body>footer nav ul li {
+body>footer nav ul li:not(:last-child) {
     padding-bottom: 10px;
 }
 
 body>footer .social-media ul {
     list-style: none;
     width: 100%;
+    padding: 0px;
     font-size: 30px;
     display: flex;
     justify-content: space-around;
@@ -170,5 +227,6 @@ body>footer .social-media ul {
 @media screen and (min-width: 768px) {
     body>footer .social-media ul {
         justify-content: space-between;
+        padding-right: 50px;
     }
 }
