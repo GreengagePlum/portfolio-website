@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
     body>header {
         display: flex;
         align-items: center;
@@ -14,7 +14,7 @@ body header img {
     margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px), print {
     body header img {
         display: inline;
         margin-left: 0px;
@@ -29,7 +29,7 @@ body header div {
     width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
     body header div {
         flex-direction: row;
         justify-content: space-between;
@@ -44,7 +44,7 @@ body header nav ul {
     align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
     body header nav ul {
         flex-direction: row;
         padding-left: 20px;
@@ -55,7 +55,7 @@ body header nav ul li {
     padding-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
     body header nav ul li {
         padding-bottom: 0px;
     }
@@ -82,9 +82,9 @@ main>header img {
     justify-content: space-evenly;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
     #articles {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -175,7 +175,7 @@ body>footer {
     justify-content: space-evenly;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
     body>footer {
         flex-direction: row;
     }
@@ -188,7 +188,7 @@ body>footer #notices img {
     margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
     body>footer #notices img {
         display: inline;
         margin-left: 0px;
@@ -200,7 +200,7 @@ body>footer #notices>p {
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
     body>footer #notices>p {
         text-align: start;
     }
@@ -224,7 +224,7 @@ body>footer .social-media ul {
     justify-content: space-around;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
     body>footer .social-media ul {
         justify-content: space-between;
         padding-right: 50px;
