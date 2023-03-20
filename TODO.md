@@ -20,7 +20,7 @@
 
 ## Configuration
 
-- [ ] Seperate index.css and style.css
+- [ ]
 
 ## Miscellaneous
 
@@ -36,3 +36,4 @@
 - [x] Optimize for mobile first
 - [x] Make burger menu for mobile
 - [x] Align article footer
+- [x] Seperate index.css and style.css
