@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efe Erken</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -12,20 +12,8 @@
 </head>
 
 <body>
-    <header>
-        <img src="assets/img/logo.svg" alt="Deux lettres e balancé l'un sur l'autre" />
-        <div>
-            <nav>
-                <ul>
-                    <li>Mes Projets</li>
-                    <li>À Propos de Moi</li>
-                </ul>
-            </nav>
-            <section id="search-box">
-                <button type="button">Recherche</button>
-            </section>
-        </div>
-    </header>
+    <?php require("assets/locales/fr.php"); ?>
+    <?php require("assets/templates/header.php"); ?>
     <main>
         <header>
             <img src="assets/img/poster.jpg" alt="Placeholder image" />
@@ -50,14 +38,7 @@
                 </main>
                 <footer>
                     <button type="button"><i class="mdi mdi-hand-clap"></i></button>
-                    <section class="social-media">
-                        <ul>
-                            <li><i class="mdi mdi-instagram"></i></li>
-                            <li><i class="mdi mdi-youtube"></i></li>
-                            <li><i class="mdi mdi-twitter"></i></li>
-                            <li><i class="mdi mdi-facebook"></i></li>
-                        </ul>
-                    </section>
+                    <?php require("assets/templates/social-media.php"); ?>
                 </footer>
             </article>
             <article>
@@ -71,14 +52,7 @@
                 </main>
                 <footer>
                     <button type="button"><i class="mdi mdi-hand-clap"></i></button>
-                    <section class="social-media">
-                        <ul>
-                            <li><i class="mdi mdi-instagram"></i></li>
-                            <li><i class="mdi mdi-youtube"></i></li>
-                            <li><i class="mdi mdi-twitter"></i></li>
-                            <li><i class="mdi mdi-facebook"></i></li>
-                        </ul>
-                    </section>
+                    <?php require("assets/templates/social-media.php"); ?>
                 </footer>
             </article>
             <article>
@@ -93,14 +67,7 @@
                 </main>
                 <footer>
                     <button type="button"><i class="mdi mdi-hand-clap"></i></button>
-                    <section class="social-media">
-                        <ul>
-                            <li><i class="mdi mdi-instagram"></i></li>
-                            <li><i class="mdi mdi-youtube"></i></li>
-                            <li><i class="mdi mdi-twitter"></i></li>
-                            <li><i class="mdi mdi-facebook"></i></li>
-                        </ul>
-                    </section>
+                    <?php require("assets/templates/social-media.php"); ?>
                 </footer>
             </article>
             <article>
@@ -113,58 +80,12 @@
                 </main>
                 <footer>
                     <button type="button"><i class="mdi mdi-hand-clap"></i></button>
-                    <section class="social-media">
-                        <ul>
-                            <li><i class="mdi mdi-instagram"></i></li>
-                            <li><i class="mdi mdi-youtube"></i></li>
-                            <li><i class="mdi mdi-twitter"></i></li>
-                            <li><i class="mdi mdi-facebook"></i></li>
-                        </ul>
-                    </section>
+                    <?php require("assets/templates/social-media.php"); ?>
                 </footer>
             </article>
         </section>
-        <section class="social-media">
-            <p>N'oubliez pas de me suivre sur les réseaux sociaux</p>
-            <div id="social-box">
-                <ul>
-                    <li>Instagram</li>
-                    <li>YouTube</li>
-                    <li>Twitter</li>
-                    <li>Tiktok</li>
-                    <li>Facebook</li>
-                    <li>LinkedIn</li>
-                    <li>Telegram</li>
-                    <li>Spotify</li>
-                    <li>Reddit</li>
-                    <li>Soundcloud</li>
-                    <li>Twitch</li>
-                </ul>
-                <button type="button">Plus</button>
-            </div>
-        </section>
     </main>
-    <footer>
-        <section id="notices">
-            <img src="assets/img/logo.svg" alt="Deux lettres e balancé l'un sur l'autre" />
-            <p>Slogan. Site officiel de Efe Erken.</p>
-            <p>Copyright (c)</p>
-        </section>
-        <nav>
-            <ul>
-                <li>Mes Projets</li>
-                <li>À Propos de Moi</li>
-            </ul>
-        </nav>
-        <section class="social-media">
-            <ul>
-                <li><i class="mdi mdi-instagram"></i></li>
-                <li><i class="mdi mdi-youtube"></i></li>
-                <li><i class="mdi mdi-twitter"></i></li>
-                <li><i class="mdi mdi-facebook"></i></li>
-            </ul>
-        </section>
-    </footer>
+    <?php require("assets/templates/footer.php"); ?>
 </body>
 
 </html>

@@ -17,6 +17,7 @@
 - [ ] Choose fonts
 - [ ] Add a skills section
 - [ ] Add tab bar icon
+- [ ] Add dark mode
 
 ## Configuration
 
@@ -24,7 +25,6 @@
 
 ## Miscellaneous
 
-- [ ] Configure no file name in URL
 - [ ] Return to top button
 - [ ] Incorporate CSS variables
 - [ ] Optimize print layout
@@ -37,3 +37,4 @@
 - [x] Make burger menu for mobile
 - [x] Align article footer
 - [x] Seperate index.css and style.css
+- [-] Configure no file name in URL
