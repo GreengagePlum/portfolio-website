@@ -16,7 +16,6 @@
 - [ ] Add colors and a theme
 - [ ] Choose fonts
 - [ ] Add a skills section
-- [ ] Add tab bar icon
 - [ ] Add dark mode
 
 ## Configuration
@@ -38,3 +37,4 @@
 - [x] Align article footer
 - [x] Seperate index.css and style.css
 - [-] Configure no file name in URL
+- [x] Add tab bar icon
