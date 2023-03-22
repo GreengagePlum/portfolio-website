@@ -13,4 +13,7 @@ $lang = [
     "logo" => [
         "alt-text" => "Two e letters stacked one on another"
     ],
+    "button" => [
+        "see-more" => "See more posts"
+    ],
 ];
