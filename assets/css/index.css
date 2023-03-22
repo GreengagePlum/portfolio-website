@@ -5,7 +5,8 @@
     justify-content: space-evenly;
 }
 
-@media screen and (min-width: 768px), print {
+@media screen and (min-width: 768px),
+print {
     #articles {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -90,4 +91,11 @@
 
 #articles article footer .social-media ul li:not(:last-child) {
     margin-right: 5px;
+}
+
+body main>button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }

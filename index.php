@@ -1,4 +1,4 @@
-<?php require("assets/php/lang.php"); ?>
+<?php require_once("assets/php/lang.php"); ?>
 <!DOCTYPE html>
 <html lang="<?= $LANG_CURR ?>" dir="ltr">
 
@@ -14,15 +14,21 @@
 </head>
 
 <body>
-    <?php require("assets/templates/header.php"); ?>
+    <?php require_once("assets/templates/header.php"); ?>
     <main>
         <header>
             <img src="assets/img/poster.jpg" alt="Placeholder image" />
         </header>
         <section id="articles">
+            <?php
+            require_once("assets/php/Article.php");
+            $articleHandler = new Article();
+            $articleHandler->buildArticleElement($articleHandler->getArticle(6));
+            ?>
         </section>
+        <button type="button" value="6"><?= $lang["button"]["see-more"] ?></button>
     </main>
-    <?php require("assets/templates/footer.php"); ?>
+    <?php require_once("assets/templates/footer.php"); ?>
 </body>
 
 </html>

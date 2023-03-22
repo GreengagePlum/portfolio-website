@@ -30,6 +30,24 @@ class Article extends Database
                 \"" . $title . "\", \"" . $description . "\", \"" . $imagePath . $imageName . "\", \"" . $imageAltText . "\")"
         );
     }
-}
 
-// $test = new Article();
+    public function getArticle(int $count): array
+    {
+        $query = $this->pdo->prepare(
+            "SELECT * FROM article ORDER BY id LIMIT ?"
+        );
+        $query->execute([$count]);
+        return $query->fetchAll();
+    }
+
+    public function buildArticleElement(array $queryResult)
+    {
+        foreach ($queryResult as $row) {
+            $articleTitle = $row["title"];
+            $articleDescription = $row["description"];
+            $articleImgPath = "assets/img/article/" . $row["imageName"];
+            $articleImgAlt = $row["imageAltText"];
+            require("assets/templates/article.php");
+        }
+    }
+}
