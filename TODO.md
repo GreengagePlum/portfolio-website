@@ -2,12 +2,12 @@
 
 ## Bugs & Fixes
 
-- [ ]
+- [ ] Correct "greatful" type in the database entry with id=2
+- [ ] Correct "emotion.jpg" image path in the database entry with id=16
 
 ## Features
 
 - [ ] Add a form (email/account/quiz)
-- [ ] Add a "more projects" button
 - [ ] Add links and buttons to page navbar
 - [ ] Add links and buttons to article footer
 - [ ] Replace placeholder images
@@ -38,3 +38,4 @@
 - [x] Seperate index.css and style.css
 - [-] Configure no file name in URL
 - [x] Add tab bar icon
+- [x] Add a "more projects" button
