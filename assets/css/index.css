@@ -1,0 +1,101 @@
+#articles {
+    margin: 0 5vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px),
+print {
+    #articles {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#articles article {
+    display: grid;
+    grid-template-rows: 1fr calc(6em + 10px) 40px;
+    /* grid-template-rows: 335px 1fr 30px; */
+    gap: 10px;
+    position: relative;
+    margin: 20px 10px;
+    padding: 19px 17px 27px;
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+}
+
+#articles article header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 275px;
+    max-width: 495px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#articles article header h1 {
+    position: relative;
+    display: block;
+    word-wrap: break-word;
+    overflow-y: hidden;
+    max-height: 2.4em;
+    /* (Number of lines you want visible) * (line-height) */
+    line-height: 1.2em;
+    margin: 8px;
+}
+
+#articles article main p {
+    position: relative;
+    display: block;
+    word-wrap: break-word;
+    overflow-y: hidden;
+    max-height: 6em;
+    /* (Number of lines you want visible) * (line-height) */
+    line-height: 1.2em;
+    margin: 5px;
+}
+
+#articles article footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+#articles article footer button {
+    align-self: center;
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    border: none;
+    background: none;
+    padding: 0px;
+}
+
+#articles article footer .social-media ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#articles article footer .social-media ul li {
+    font-size: 30px;
+}
+
+#articles article footer .social-media ul li:not(:last-child) {
+    margin-right: 5px;
+}
+
+body main>button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
