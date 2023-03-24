@@ -4,12 +4,10 @@
 
 - [ ] Correct "greatful" type in the database entry with id=2
 - [ ] Correct "emotion.jpg" image path in the database entry with id=16
+- [ ] Modify database types to VARCHAR(255) and TEXT
 
 ## Features
 
-- [ ] Add a form (email/account/quiz)
-- [ ] Add links and buttons to page navbar
-- [ ] Add links and buttons to article footer
 - [ ] Replace placeholder images
 - [ ] Always present navbar
 - [ ] Add mouse hover animations
@@ -17,6 +15,7 @@
 - [ ] Choose fonts
 - [ ] Add a skills section
 - [ ] Add dark mode
+- [ ] Remove "See more" button when there is nothing more to load
 
 ## Configuration
 
@@ -39,3 +38,6 @@
 - [-] Configure no file name in URL
 - [x] Add tab bar icon
 - [x] Add a "more projects" button
+- [x] Add links and buttons to page navbar
+- [x] Add links and buttons to article footer
+- [x] Add a form (email/account/quiz)
