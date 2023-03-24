@@ -11,22 +11,26 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
     <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
 </head>
 
 <body>
     <?php require_once("assets/templates/header.php"); ?>
     <main>
         <header>
-            <img src="assets/img/poster.jpg" alt="Placeholder image" />
+            <img src="assets/img/poster.jpg" alt="A stage with red open red curtains with an inscription in the middle saying please welcome to the stage" />
         </header>
         <section id="articles">
             <?php
             require_once("assets/php/Article.php");
-            $articleHandler = new Article();
-            $articleHandler->buildArticleElement($articleHandler->getArticle(6));
+            // L'intervalle des articles à charger initialement
+            (new Article())->moreArticle(0, 6);
             ?>
         </section>
-        <button type="button" value="6"><?= $lang["button"]["see-more"] ?></button>
+        <div>
+            <!-- Nombre d'article à charger dans chaque click : data-articlecount -->
+            <button type="button" data-articlecount="6"><?= $lang["button"]["see-more"] ?></button>
+        </div>
     </main>
     <?php require_once("assets/templates/footer.php"); ?>
 </body>
