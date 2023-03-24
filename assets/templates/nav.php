@@ -1,6 +1,6 @@
 <nav>
     <ul>
-        <li><?= $lang["nav"]["projects"] ?></li>
-        <li><?= $lang["nav"]["about"] ?></li>
+        <li><a href="/"><?= $lang["nav"]["projects"] ?></a></li>
+        <li><a href="about.php"><?= $lang["nav"]["about"] ?></a></li>
     </ul>
 </nav>
