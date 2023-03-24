@@ -4,14 +4,10 @@ document
     .forEach((currentButton) => {
         currentButton
             .addEventListener("click", function () {
-                const d = new Date();
-                d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
-                let expires = "expires=" + d.toUTCString();
-                if (this.value == "fr") {
-                    document.cookie = "lang=fr;" + expires + ";path=/";
-                } else if (this.value == "en") {
-                    document.cookie = "lang=en;" + expires + ";path=/";
-                }
-                location.reload();
+                const d = new Date()
+                d.setTime(d.getTime() + 24 * 60 * 60 * 1000)
+                let expires = "expires=" + d.toUTCString()
+                document.cookie = "lang=" + this.value + ";" + expires + ";path=/"
+                location.reload()
             })
     })
