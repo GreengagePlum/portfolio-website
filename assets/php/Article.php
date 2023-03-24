@@ -10,7 +10,7 @@ class Article extends Database
         $this->initTable();
     }
 
-    private function initTable()
+    private function initTable(): void
     {
         $this->pdo->query(
             "CREATE TABLE IF NOT EXISTS article (
@@ -22,7 +22,7 @@ class Article extends Database
         );
     }
 
-    public function addArticle(string $title, string $description, string $imageName, string $imageAltText)
+    public function addArticle(string $title, string $description, string $imageName, string $imageAltText): void
     {
         $imagePath = "../img/article/";
         $this->pdo->query(
@@ -31,23 +31,28 @@ class Article extends Database
         );
     }
 
-    public function getArticle(int $count): array
+    public function getArticle(int $from, int $count): array
     {
         $query = $this->pdo->prepare(
-            "SELECT * FROM article ORDER BY id LIMIT ?"
+            "SELECT * FROM article ORDER BY id LIMIT ? OFFSET ?"
         );
-        $query->execute([$count]);
+        $query->execute([$count, $from]);
         return $query->fetchAll();
     }
 
-    public function buildArticleElement(array $queryResult)
+    public function buildArticleElement(array $queryResult): void
     {
         foreach ($queryResult as $row) {
             $articleTitle = $row["title"];
             $articleDescription = $row["description"];
             $articleImgPath = "assets/img/article/" . $row["imageName"];
             $articleImgAlt = $row["imageAltText"];
-            require("assets/templates/article.php");
+            require($_SERVER["DOCUMENT_ROOT"] . "/assets/templates/article.php");
         }
+    }
+
+    public function moreArticle(int $from, int $count): void
+    {
+        $this->buildArticleElement($this->getArticle($from, $count));
     }
 }
