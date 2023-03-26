@@ -18,25 +18,25 @@
     <?php require_once("assets/templates/header.php"); ?>
     <main>
         <h1><?= $lang["admin"]["h1"] ?></h1>
-        <form>
+        <form action="adminAfter.php" method="post" enctype="multipart/form-data">
             <label>
                 <?= $lang["form"]["label"]["title"] ?>
-                <input type="text" name="title" placeholder="<?= $lang["form"]["input"]["title"] ?>" required />
+                <input type="text" name="title" placeholder="<?= $lang["form"]["input"]["title"] ?>" />
             </label>
             <label>
                 <?= $lang["form"]["label"]["description"] ?>
-                <textarea name="description" rows="5" cols="33" placeholder="<?= $lang["form"]["textarea"]["description"] ?>" required></textarea>
+                <textarea name="description" rows="5" cols="33" placeholder="<?= $lang["form"]["textarea"]["description"] ?>"></textarea>
             </label>
             <label>
                 <?= $lang["form"]["label"]["image"] ?>
-                <input type="file" name="image" accept="image/*" required />
+                <input type="file" name="image" accept="image/*" />
             </label>
             <label>
                 <?= $lang["form"]["label"]["image-alt"] ?>
-                <input type="text" name="image-alt" placeholder="<?= $lang["form"]["input"]["image-alt"] ?>" required />
+                <input type="text" name="image-alt" placeholder="<?= $lang["form"]["input"]["image-alt"] ?>" />
             </label>
             <div>
-                <input type="submit" value="<?= $lang["button"]["submit"] ?>" />
+                <button type="submit"><?= $lang["button"]["submit"] ?></button>
             </div>
         </form>
     </main>
