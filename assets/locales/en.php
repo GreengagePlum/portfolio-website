@@ -20,6 +20,14 @@ $lang = [
     "admin" => [
         "h1" => "Insert an Article into the Database"
     ],
+    "adminAfter" => [
+        "h1" => "Result of the Article Insertion"
+    ],
+    "insertArticle" => [
+        "success" => "Article was successfully created",
+        "uploadError" => "Article couldn't be created : image upload error",
+        "critereaError" => "Article couldn't be created : data criterea error"
+    ],
     "form" => [
         "label" => [
             "title" => "Title",
@@ -34,5 +42,8 @@ $lang = [
         "textarea" => [
             "description" => "I made a website using PHP."
         ]
+    ],
+    "search" => [
+        "h1" => "Results for the term: "
     ]
 ];
