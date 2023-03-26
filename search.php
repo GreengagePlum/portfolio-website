@@ -11,20 +11,18 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
     <script src="assets/js/script.js" defer></script>
-    <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
 </head>
 
 <body>
     <?php require_once("assets/templates/header.php"); ?>
     <main>
-        <header>
-            <img src="assets/img/poster.jpg" alt="A stage with red open red curtains with an inscription in the middle saying please welcome to the stage" />
-        </header>
+        <h1><?= $lang["search"]["h1"] . $_GET["search"] ?></h1>
         <section id="articles">
             <?php
             require_once("assets/php/Article.php");
             // L'intervalle des articles à charger initialement
-            (new Article())->moreArticle(0, 6);
+            (new Article())->moreSearchArticle(0, 6, $_GET["search"]);
             ?>
         </section>
         <div>

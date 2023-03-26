@@ -9,28 +9,19 @@
     <link rel="icon" type="image/x-icon" href="/assets/img/logo.svg" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
     <script src="assets/js/script.js" defer></script>
-    <script src="assets/js/index.js" defer></script>
 </head>
 
 <body>
     <?php require_once("assets/templates/header.php"); ?>
     <main>
-        <header>
-            <img src="assets/img/poster.jpg" alt="A stage with red open red curtains with an inscription in the middle saying please welcome to the stage" />
-        </header>
-        <section id="articles">
+        <h1><?= $lang["adminAfter"]["h1"] ?></h1>
+        <p>
             <?php
-            require_once("assets/php/Article.php");
-            // L'intervalle des articles à charger initialement
-            (new Article())->moreArticle(0, 6);
+            require_once("assets/php/insertArticle.php");
+            processRequest($lang);
             ?>
-        </section>
-        <div>
-            <!-- Nombre d'article à charger dans chaque click : data-articlecount -->
-            <button type="button" data-articlecount="6"><?= $lang["button"]["see-more"] ?></button>
-        </div>
+        </p>
     </main>
     <?php require_once("assets/templates/footer.php"); ?>
 </body>
