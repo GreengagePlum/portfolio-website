@@ -32,7 +32,7 @@ body header div {
     width: 100%;
 }
 
-@media screen and (min-width: 768px),
+@media screen and (min-width: 992px),
 print {
     body header div {
         flex-direction: row;
@@ -101,14 +101,14 @@ body header div section>button:not(:last-of-type) {
     margin-right: 10px;
 }
 
-body header nav {
+body header div nav {
     margin-top: 20px;
     width: 100%;
 }
 
 @media screen and (min-width: 768px),
 print {
-    body header nav {
+    body header div nav {
         margin: 0px;
         width: auto;
     }
@@ -191,7 +191,7 @@ print {
     }
 }
 
-body>footer #notices img {
+body>footer section img {
     width: 6rem;
     display: block;
     margin-left: auto;
@@ -200,20 +200,20 @@ body>footer #notices img {
 
 @media screen and (min-width: 768px),
 print {
-    body>footer #notices img {
+    body>footer section img {
         display: inline;
         margin-left: 0px;
         margin-right: 0px;
     }
 }
 
-body>footer #notices>p {
+body>footer section>p {
     text-align: center;
 }
 
 @media screen and (min-width: 768px),
 print {
-    body>footer #notices>p {
+    body>footer section>p {
         text-align: start;
     }
 }
