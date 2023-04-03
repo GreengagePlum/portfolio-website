@@ -15,10 +15,10 @@ class Article extends Database
         $this->pdo->query(
             "CREATE TABLE IF NOT EXISTS article (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            title VARCHAR(256) NOT NULL,
-            description VARCHAR(1024) NOT NULL,
+            title VARCHAR(255) NOT NULL,
+            description TEXT NOT NULL,
             imageName VARCHAR(64) NOT NULL,
-            imageAltText VARCHAR(256) NOT NULL)"
+            imageAltText VARCHAR(255) NOT NULL)"
         );
     }
 
@@ -38,14 +38,14 @@ class Article extends Database
 
     public function getArticle(int $from, int $count): array
     {
-        $query = $this->pdo->prepare("SELECT * FROM article ORDER BY id LIMIT ? OFFSET ?");
+        $query = $this->pdo->prepare("SELECT * FROM article ORDER BY id DESC LIMIT ? OFFSET ?");
         $query->execute([$count, $from]);
         return $query->fetchAll();
     }
 
     public function searchArticle(int $from, int $count, string $term): array
     {
-        $query = $this->pdo->prepare("SELECT * FROM article WHERE title LIKE :term ORDER BY id LIMIT :count OFFSET :from");
+        $query = $this->pdo->prepare("SELECT * FROM article WHERE title LIKE :term ORDER BY id DESC LIMIT :count OFFSET :from");
         $query->bindValue(":term", "%" . htmlspecialchars($term) . "%");
         $query->bindValue(":count", htmlspecialchars($count));
         $query->bindValue(":from", htmlspecialchars($from));
