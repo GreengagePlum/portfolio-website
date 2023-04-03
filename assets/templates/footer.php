@@ -1,5 +1,5 @@
 <footer>
-    <section id="notices">
+    <section>
         <?php require("logo.php"); ?>
         <p><?= $lang["footer"]["slogan"] ?></p>
         <p><?= $lang["footer"]["copyright"] ?></p>
