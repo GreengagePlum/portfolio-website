@@ -2,10 +2,7 @@
 
 ## Bugs & Fixes
 
-- [ ] Modify database types to VARCHAR(255) and TEXT
-- [ ] Translate JS and PHP form validation
-- [ ] Add try-catch blocks and error management
-- [ ] Add server response codes for example 404, 200...
+- [ ]
 
 ## Features
 
@@ -46,3 +43,7 @@
 - [x] Correct "emotion.jpg" image path in the database entry with id=16
 - [x] Correct "greatful" typo in the database entry with id=2
 - [x] Reorganize PHP form validation code in insertArticle.php into more logical folders
+- [x] Translate PHP form validation (not JS)
+- [-] Add try-catch blocks and error management
+- [-] Add server response codes for example 404, 200...
+- [x] Modify database types to VARCHAR(255) and TEXT
