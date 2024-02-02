@@ -1,61 +1,80 @@
 # Portfolio Website
 
-Vous trouverez ici le projet de l'UE Programmation Web 2
+[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
+[![fr](https://img.shields.io/badge/lang-fr-yellow.svg)](README.fr.md)
 
-Le sujet du projet était de créer un site internet qui présente nos projets et nos compétences pour faire un portfolio personnel. Il fallait utiliser HTML, CSS, Javascript, PHP et une base de données (SQLite dans mon cas) sans aucune librarie externe.
+You'll find here the project for the class of "Web Programming 2" done during the second year of the Computer Science degree at the University of Strasbourg.
 
-Je me suis inspiré de ces ressources :
+The project consists of the creation of a website presenting our projects and our skills to showcase our personal portfolio. HTML, CSS, JavaScript, PHP and a database (SQLite in my case) was to be used without any other external library.
+
+I was inspired by these resources:
 
 * [Ekrem İmamoğlu](https://www.ekremimamoglu.com)
 
-## Auteur
+## Author
 
 **Efe ERKEN**
 
-Année : L2S4 Printemps 2023
+Year: L2S4 Printemps 2023
 
-Groupes : TD2-TP4
+Groups: TD2-TP4
 
-## Fonctionnalités non implémentées
+## Unimplemented features
 
-Voici je vous explique les parties cosmetiques du projet pour lesquelles je n'ai pas eu le temps de les finir. Comme dit, ce ne sont que cosmetique et non nécessaire pour les demandes techniques du projet.
+Here I will explain the cosmetic parts of the project for which I didn't have the time to finish. As said, these are only cosmetic and are not necessary for the technical demands of the project.
 
-### De vrais projets
+### Real projects
 
-Je n'ai pas eu le temps de mettre mes vrais projets, ni mes compétences, ni de vrais images, ni mes vrais résaux sociaux, ni un vrai logo et ni un vrai slogan et copyright. Je n'ai non plus pas mis une vrai page "À propos", ce n'est juste temporaire.
+I didn't have the time to include my real projects, neither my skills, nor real images, nor my actual social media, nor a real logo and nor a real slogan and copyright. I also didn't include a real "About" page, this is only temporary.
 
-Puisque je me suis concentré beaucoup sur les demandes et les critères de notation du projet, et aussi à cause des autres projets qui se sont ajouté vers la fin de l'année, je n'ai pas eu le temps de faire de ce projet un vrai site personnel.
+Since I concentrated a lot on the demands and the grading criteria of the project, and also due to the other projects that popped up close to the end of the year, I didn't have the time to do a real personal website with this project.
 
-Mais finalement, j'ai appris plein de choses sur le développement web et les parties cosmetiques ne sont que des détails qui ne nuisent à rien.
+But, at the end I learned many things about web development and the cosmetic parts are only details that do no harm.
 
-### Thème et conception
+### Theme and design
 
-C'est vrai que le site n'est pas le plus beau et le plus sophistiqué en termes de style. Je voulais un site simple dans son style et facile à comprendre dès le départ mais à cause des contraintes de temps encore je me suis pas trop penché dessus.
+It's true that the site is not the most beautiful and the most sophisticated in terms of style. I wanted a site simple in its style and easy to understand right from the beginning but again due to time contraints I didn't lean on it much.
 
-Des polices et des couleurs restent à choisir pour un thème cohérent ainsi que possiblement des animations à ajouter.
+Fonts and colors are yet to be chosen for a coherent theme as well as possibly some animations are to be added.
 
-### Applaudir des projets
+### Applauding projects
 
-Je n'ai pas implementé la fonctionnalité "applaudir" pour les projets. Elle était censé afficher le nombre de fois un projet avait été "applaudit" comme dans le site qui m'a inspiré.
+I didn't implement the "applaud" feature for the projects. It was supposed to display the number of times a project was "applauded" just like in the site that inspired me.
 
-## Dépôt Git
+## Usage
 
-Le dépôt git de [ce projet](https://git.unistra.fr/erken/portfolio-website) suit une structure claire et déterminée proposée par Vincent Driessen à son poste [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/).
+First, make sure that you have `php` installed on your machine as well as `sqlite`. Then, to launch the site, open a terminal in the project folder and write this command:
 
-Du coup ne soyez pas surpris par le fait que `branch main` n'a presque pas de commit. Tout le développement se passe sur le `branch develop`. Avant chaque version, tout est préparé et assuré fonctionnel pour être inauguré au `branch main` qui n'a que des versions stables et complètes.
+```sh
+php -S localhost:8000
+```
 
-### Légende emoji
+You can now open your browser and write `localhost:8000` in the address bar to see the site.
 
-La signification des emojis utilisé dans les descriptions des commits git.
+Attention, there is an extra page which is a sort of a hidden page for administrators. To access it, write `localhost:8000/admin.php` in the address bar. There is no other way to access it.
 
-Emoji | Signification
+## Git repository
+
+The git repository of [this project](https://greengageplum.github.io/sokoban/) follows a clear and determined
+structure put forth by Vincent Driessen in his
+post "[A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)".
+
+So don't be surprised by the fact that the `main branch` has few commits. All the development is happening on
+the `develop branch`. Before each version, everything is prepared and guaranteed functional to be merged
+into `main branch` which only has stable and complete versions.
+
+### Emoji legend
+
+These are the meanings of the emojis used in the git commit messages. See [gitmoji](https://gitmoji.dev/) also.
+
+Emoji | Meaning
 :-|:-
-✨ NEW | Nouveau fichier ou fonctionnalité
-🔧 UPDATE | Mise à jour d'une partie de programme
-🔨 CONFIG | Manipulation des fichiers de configuration comme makefile ou doxyfile
-♻️ REFACTOR | Réécriture d'une partie du programme
-🐛 BUGFIX | Une correction de bogue
-🔥 DELETION | Suppression d'un fichier ou d'une fonctionnalité
-📝 DOC | Manipulation de la documentation
-🎉 EPOCH | Le début du projet
-🚀 RELEASE | Une nouvelle version du programme
+✨ NEW | New file or feature
+🔧 UPDATE | Update of a part of the program
+🔨 CONFIG | Changes in config files like makefile and doxyfile
+♻️ REFACTOR | Rewrite of a part of the program
+🐛 BUGFIX | A bug fix
+🔥 DELETION | Removal of a file or a feature
+📝 DOC | Changes in the documentation
+🎉 EPOCH | The beginning of the project
+🚀 RELEASE | A new version of the program
