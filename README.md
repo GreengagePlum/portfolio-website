@@ -15,7 +15,7 @@ I was inspired by these resources:
 
 **Efe ERKEN**
 
-Year: L2S4 Printemps 2023
+Year: 2nd year 4th semester Spring 2023
 
 Groups: TD2-TP4
 
